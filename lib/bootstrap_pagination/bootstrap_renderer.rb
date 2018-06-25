@@ -15,7 +15,7 @@ module BootstrapPagination
         end
       end.join(@options[:link_separator])
 
-      tag("ul", list_items, class: ul_class)
+      tag("ul", list_items, container_attributes.merge(class: ul_class))
     end
 
     def container_attributes
